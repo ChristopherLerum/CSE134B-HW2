@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Homepage</title>
+    <link rel="icon" href="images/favicon.ico" rel="icon" />
+    
+    <!-- limit in HW2   -->
+    <style> 
+        article {
+            border: solid 2px black;
+            padding: 5px;
+        }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <noscript>
+      JavaScript is not on for this HW
+    </noscript>
+    <header>
+        <hgroup>
+            <h1>Christopher Lerum's Portfolio</h1>
+            <p>Welcome!</p>
+        </hgroup>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="contactMe.html">Contact Me</a></li>
+        <li><a href="labs.html">Labs</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="/submit" method="post" id="contactform">
+                <fieldset>
+                    <legend>Leave a message for me here</legend>
+                    <form-field>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" name="fullname" id="fullname" required>
+                    </form-field>
+                    <br/>
+                    <form-field>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" required>
+                    </form-field>
+                    <br/>
+                    <form-field>
+                        <label for="topic">Topic:</label>
+                        <input type="text" name="topic" id="topic" required>
+                    </form-field>
+                    <br/>
+                    <form-field>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </form-field>
+                    <br/>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Contact me at: <a href="mailto:clerum@ucsd.edu">clerum@ucsd.edu</a>.<br/>
+            Or message me through the <a href="contactMe.html">Contact Me</a> page.
+        </address>
+
+    </footer>
+  </body>
+</html>

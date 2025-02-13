@@ -5,30 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Homepage</title>
     <link rel="icon" href="images/favicon.ico" rel="icon" />
+    
+    <!-- limit in HW2   -->
+    <style> 
+        article {
+            border: solid 2px black;
+            padding: 5px;
+        }
+    </style>
+    <script></script>
   </head>
   <body>
     <noscript>
-      JavaScript is not activated. While you can still access key information
-      for now, you should enable scripts on your browser for full functionality.
+      JavaScript is not on for this HW
     </noscript>
     <header>
-
+        <hgroup>
+            <h1>Christopher Lerum's Portfolio</h1>
+            <p>Welcome!</p>
+        </hgroup>
     </header>
 
     <nav>
       <ul>
-        <li><a href="#nsx">1990 Honda NSX</a></li>
-        <li><a href="#rx8">2003 Mazda RX-8</a></li>
-        <li><a href="#718">2017 Porsche Cayman 718</a></li>
-        <li><a href="#ctr">2022 Honda Civic Type-R</a></li>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="contactMe.html">Contact Me</a></li>
+        <li><a href="labs.html">Labs</a></li>
       </ul>
     </nav>
 
     <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/portrait.jpg" alt="Myself in a suit" width="200">
+                <figcaption>
+                    This is me at Geisel Library at UCSD
+                </figcaption>
+            </figure>
 
+            <p>
+                Hello my name is <strong>Christopher Lerum</strong> and I am a student studying at UCSD and majoring 
+                in Computer Science. Here you can find projects I have worked on and learn about what I have done.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article id="devsurf">
+                <h3>Coding Project: DevSurf</h3>
+                <a href="https://github.com/cse110-sp24-group29/cse110-sp24-group29?tab=readme-ov-file">Link to Devsurf Github</a>
+
+                <figure>
+                    <img src="images/devsurfLogo.png" alt="The DevSurf logo" width="200">
+                </figure>
+
+                <p>
+                    <b>DevSurf</b> is a developer jounal I helped make in <em>CSE 110</em>. Our developer journal allows users to safely save their notes and information for multiple projects as well as keep a list of tasks and milestones for each project.
+                </p>
+
+                <video width="640" height="360" controls>
+                    <source src="images/devsurfVideo.mp4">
+                </video>
+
+            </article>
+
+            <br/>
+
+            <article id="research">
+                <h3>Research Project: Evaluation of Pollster Accuracy</h3>
+                <a href="https://github.com/COGS108/Group047-FA24">Link to Research Project Github</a>
+
+                <figure>
+                    <img src="images/map.png" alt="Icon map of the USA" width="200">
+                </figure>
+
+                <p>
+                    <b>Evaluation of Pollster Accuracy</b> is a research project I helped make in <i>COGS 108</i>. Our project looks into which polling sources are the most accurate at predicting the outcomes of U.S. federal and gubernatorial elections. 
+                </p>
+            </article>
+        </section>
     </main>
 
     <footer>
+        <address>
+            Contact me at: <a href="mailto:clerum@ucsd.edu">clerum@ucsd.edu</a>.<br/>
+            Or message me through the <a href="contactMe.html">Contact Me</a> page.
+        </address>
 
     </footer>
   </body>
